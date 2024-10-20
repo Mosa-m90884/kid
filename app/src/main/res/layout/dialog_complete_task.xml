@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pointback"
+    android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+android:id="@+id/lli"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="50dp"
+    >
+
+    <TextView
+        android:id="@+id/textTotalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/grade"
+        android:gravity="center"
+        android:text="جار التحميل..."
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lli"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:textStyle="bold"
+        android:text=" لقد حصلت على نقاط وستحصل على هدية! يرجى الضغط على زر اتمام انجاز المهمة "
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonClose"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/textMessage"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button1"
+        android:drawablePadding="5dp"
+        android:padding="2dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:text="انجاز المهمة بنجاح"
+        android:textSize="18dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/shareButton"
+
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonClose"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button1"
+        android:textColor="@color/white"
+        android:text="@string/share"
+        android:textSize="18dp" />
+</RelativeLayout>

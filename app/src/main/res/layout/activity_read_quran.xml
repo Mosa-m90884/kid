@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- زر الرجوع -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رجوع" />
+
+    <!-- TextView لعرض نص "قراءة القرآن" -->
+    <TextView
+        android:id="@+id/textReadQuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" قراءة القرآن الكريم"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/buttonBack"
+        android:layout_marginTop="16dp" />
+
+    <!-- Spinner لاختيار السورة -->
+    <Spinner
+        android:id="@+id/spinnerSurah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textReadQuran"
+        android:layout_marginTop="16dp" />
+    <!-- ScrollView لتمكين التمرير -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonOpenQuran"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <!-- عنصر نص لعرض نص القرآن -->
+        <TextView
+            android:id="@+id/textQuran"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+
+            android:padding="8dp"
+            android:background="@color/background" />
+    </ScrollView>
+
+    <!-- زر لفتح نص القرآن -->
+    <Button
+        android:id="@+id/buttonOpenQuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" إقرأ سورة من القرآن الكريم"
+        android:textColor="@color/purple_700"
+
+        android:layout_below="@id/spinnerSurah"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

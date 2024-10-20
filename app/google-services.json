@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1042632351568",
+    "project_id": "kiddo-a86d8",
+    "storage_bucket": "kiddo-a86d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042632351568:android:e58100e2c367afba0cd655",
+        "android_client_info": {
+          "package_name": "com.example.kiddo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrlBsESW2u2_1i1jEg1WRj--0PwIBK8Zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

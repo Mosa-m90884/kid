@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- زر الرجوع -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رجوع" />
+
+    <!-- TextView لعرض نص "قراءة الحديث الشريف" -->
+    <TextView
+        android:id="@+id/textReadHadith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قراءة الحديث الشريف"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/buttonBack"
+        android:layout_marginTop="16dp" />
+
+    <!-- زر لفتح حديث معين -->
+    <Button
+        android:id="@+id/buttonOpenHadith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إقرأ الحديث الشريف"
+        android:layout_below="@id/textReadHadith"
+        android:layout_marginTop="16dp" />
+
+    <!-- ScrollView لتمكين التمرير -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonOpenHadith"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <!-- عنصر نص لعرض نص الحديث -->
+        <TextView
+            android:id="@+id/textHadith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray" />
+    </ScrollView>
+</RelativeLayout>

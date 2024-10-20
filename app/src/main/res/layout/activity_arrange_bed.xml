@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- زر الرجوع -->
+
+
+    <!-- TextView لعرض نص "صورة السرير بعد ترتيبه" -->
+
+    <!-- عنصر صورة لعرض الصورة الملتقطة -->
+
+    <!-- زر لفتح الكاميرا -->
+
+    <ImageButton
+        android:id="@+id/buttonBack"
+        android:layout_width="82dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:background="@null"
+        android:contentDescription="your_description"
+        app:srcCompat="@drawable/back_dark" />
+
+    <TextView
+        android:id="@+id/textBedArranged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBack"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="105dp"
+        android:text="صورة السرير بعد ترتيبه"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageBed"
+        android:layout_width="395dp"
+        android:layout_height="338dp"
+        android:layout_below="@+id/textBedArranged"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/bed"
+        android:scaleType="fitXY"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/buttonOpenCamera"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageBed"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="14dp"
+        android:text="فتح الكاميرا"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</RelativeLayout>

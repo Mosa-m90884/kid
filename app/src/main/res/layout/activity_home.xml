@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="5dp">
+
+    <ImageView
+        android:id="@+id/appimageProfile"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="@+id/ll"
+android:layout_marginRight="50dp"
+        android:gravity="left"
+        app:srcCompat="@drawable/child" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardBackgroundColor="@color/cardview_shadow_end_color"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="1pt"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_margin="15dp"
+                    android:gravity="left"
+                    app:srcCompat="@drawable/child" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="15dp"
+                    android:gravity="right"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <!-- نص الترحيب -->
+                    <TextView
+                        android:id="@+id/textWelcome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="2dp"
+                        android:text="مرحبا محمد"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!-- نص النقاط -->
+                    <TextView
+                        android:id="@+id/textPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="لديك 0 نقطة"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- أزرار المهام أسفل CardView -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonArrangeBed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="50dp"
+
+            android:text="@string/task1"
+            android:background="@drawable/button"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonReadQuran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/task2"
+            android:background="@drawable/button"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonReadHadith"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/task3"
+            android:background="@drawable/button"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonArrangeCloset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/task4"
+            android:background="@drawable/button"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/task5"
+            android:background="@drawable/button"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/vector"/>
+</RelativeLayout>
